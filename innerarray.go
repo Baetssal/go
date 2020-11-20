@@ -16,4 +16,18 @@ func main(){
 	fmt.Printf("%x\n", &slice3[2])
 	fmt.Println(slice2)
 	fmt.Printf("%x\n", &slice2[2])
+
+	floatSlice := make([]float64, 10)
+	boolSlice := make([]bool, 10)
+	fmt.Println(floatSlice[8], boolSlice[6])
+	myMusic := []string{"Brown eyes", "Exo", "AKMU", "BIGBANG"}
+	urMusic := myMusic[:]
+	urMusic[3] = "Sun"
+	fmt.Printf("%x\n", &urMusic[3])
+	fmt.Printf("%x\n", &myMusic[3])
+	myMusic = append(myMusic, "Irin")
+	fmt.Println(urMusic)
+	fmt.Println(myMusic)
+	fmt.Printf("%x\n", &urMusic[3])
+	fmt.Printf("%x\n", &myMusic[3])
 }
