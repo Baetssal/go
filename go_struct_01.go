@@ -24,9 +24,9 @@ func main() {
 	fmt.Println(p.description, p.count)
 
 	/*
-	var bolts part
-	bolts.description = "Hex bolts"
-	bolts.count = 100
-	showInfo(bolts)
+		var bolts part
+		bolts.description = "Hex bolts"
+		bolts.count = 100
+		showInfo(bolts)
 	*/
 }
